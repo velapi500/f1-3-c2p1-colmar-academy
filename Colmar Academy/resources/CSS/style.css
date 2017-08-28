@@ -1,0 +1,545 @@
+body{
+  margin: 0;
+  font-size: 14px;
+  font-family: "Hind Vadodara";
+  background-color: #F4F4F4;
+}
+
+
+@font-face {
+  font-family: 'Hind Vadodara';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Vadodara'), local('HindVadodara-Regular'), url(https://fonts.gstatic.com/s/hindvadodara/v2/9c6KKeibr6NtFqknnNxZB8m50xh7hW5sbYCmNlLTrHY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Hind Vadodara';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Hind Vadodara SemiBold'), local('HindVadodara-SemiBold'), url(https://fonts.gstatic.com/s/hindvadodara/v2/KrZ6f_YevRawHvh0qDBkTaSVz8B3Gj8ppCCOMWTf7Gc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Biryani Black'), local('Biryani-Black'), url(https://fonts.gstatic.com/s/biryani/v2/zesSxRLKV_fx-Z23Oa-YNwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Biryani ExtraBold'), local('Biryani-ExtraBold'), url(https://fonts.gstatic.com/s/biryani/v2/cJ4Ij9Z_fMLiglmcqwLkfwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Biryani';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Biryani Regular'), local('Biryani-Regular'), url(https://fonts.gstatic.com/s/biryani/v2/y_RpTy_cGK8YkLRjZjCxDALUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+.container{
+  display: flex;
+}
+/*Header begins here*/
+
+
+.business-name{
+  align-items: center;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-title{
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.business-title img{
+  height: 50px;
+}
+
+.colmar{
+  color: #C0B283;
+  font-size: 1.5rem;
+  font-family: 'Biryani';
+  font-weight: 800;
+}
+
+.academy{
+  color: #373737;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.menu span{
+  margin: 16px;
+  color: #373737;
+  font-family: "Hind Vadodara";
+}
+
+.menu span:hover{
+  color: #DCD0C0;
+}
+.menu{
+  display: inline-flex;
+}
+
+.business-name-mobile{
+  display: none;
+}
+
+/*@media only screen and (max-width: 1024px ){
+.business-name-mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+}
+.business-name{
+  display: none;
+}
+}*/
+/*MEDIA QUERY FOR MOBILE*/
+@media only screen and (max-width: 1024px ){
+.business-name-mobile{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+}
+.business-name{
+  display: none;
+}
+}
+
+/*Banner!!*/
+
+
+.banner{
+  background-color: #C0B283;
+  font-family: "Hind Vadodara";
+  /*margin-bottom: 32px;*/
+}
+
+#title{
+  font-family: 'Biryani';
+  /*font-weight: 800;*/
+}
+
+.banner img{
+  margin: 32px 40px 32px 24px;
+  max-width: 60%;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  /*width: 400px;*/
+  width: 100%;
+  color: #373737;
+  font-family: "Hind Vadodara";
+}
+
+
+.button{
+  background-color: #373737;
+  color: #F4F4F4;
+  width: 60%;
+  text-align: center;
+  padding: 8px 0;
+}
+
+.button:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+
+h1{
+  color:  #373737;
+  opacity: 1;
+}
+
+.banner-mobile{
+  display: none;
+}
+
+/*BANNER MOBILE*/
+@media only screen and (max-width: 768px){
+
+.banner{
+  display: none;
+}
+.banner-mobile{
+  display: flex;
+  flex-direction: column;
+  background-color: #C0B283;
+}
+
+.banner-mobile img{
+  width: 100%;
+  height: auto;
+  /*margin-bottom: 0;*/
+}
+
+.text-mob{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.text-mob h3{
+  margin-top: .5rem;
+}
+.button-mob{
+  background-color: #373737;
+  color: #F4F4F4;
+  width: 70%;
+  text-align: center;
+  padding: 8px 0;
+  margin-top: .5rem;
+  margin-bottom: 2rem;
+}
+
+.button-mob:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+}
+
+/*COMPANY INFO!*/
+
+.university-info{
+  display: flex;
+  /*border: 2px solid red;*/
+  flex-direction: row;
+  font-family: "Hind Vadodara";
+}
+
+.main-info{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  /*border: 1px solid blue;*/
+  margin: 32px 24px;
+}
+
+.main-info img{
+  width: 100%;
+  flex-grow: 3;
+}
+
+.main-info h2,
+.main-info p{
+  color: #373737;
+}
+
+.main-info h2{
+  font-size: 1.5rem;
+}
+.sub-info{
+  margin: 32px 0;
+  width: 40%;
+  flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+  /*border: 2px solid green;*/
+  border-left: 1px solid #DCD0C0;
+}
+
+.info{
+  display: flex;
+  /*border: 1px solid blue;*/
+}
+.info:nth-child(2n+0){
+  background-color: #DCD0C0;
+}
+.info-img{
+  margin: 16px;
+  /*border: 2px solid green;*/
+}
+
+.info-img img{
+  width: 10rem;
+}
+
+.text-info{
+  display: flex;
+  flex-direction: column;
+  /*border: 2px solid green;*/
+  justify-content: center;
+  align-items:
+}
+
+.text-info h3{
+  margin-bottom: 8px;
+  color: #373737;
+  font-size: 1.15rem;
+}
+
+.text-info span{
+  margin-bottom: 8px;
+  color: #373737;
+}
+
+#read-more{
+  color: blue;
+}
+
+#read-more:hover{
+  color: #C0B283;
+}
+
+.sub-info-mob{
+  display: none;
+}
+/*MEDIA QUERYYYYYYYYY*/
+@media only screen and (max-width: 480px){
+  .main-info{
+    display: none;
+  }
+  .sub-info{
+    display: none;
+    /*border-bottom: #C0B283;*/
+  }
+
+  .sub-info-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px 0 16px;
+  }
+  #read-more-mob{
+    color: blue;
+    display: block;
+    margin: 16px 0;
+  }
+  #read-more-mob:hover{
+    color: #C0B283;
+  }
+
+  .info-img-mob img{
+    width: 100%;
+  }
+  .text-info-mob{
+    text-align: center;
+  }
+  .text-info-mob h3{
+    margin-bottom: 8px;
+    color: #373737;
+    font-size: 1.15rem;
+  }
+
+  /*.info-mob:nth-child(2n+0){
+    background-color: #DCD0C0;
+  }*/
+}
+
+/*PROGRAMS SECTION BEGINS*/
+
+.programs{
+  background-color: #C0B283;
+}
+.program-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.program{
+  /*border: 2px solid green;*/
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 32px;
+  margin-bottom: 20px;
+  background-color: #F4F4F4;
+}
+
+.program-img img{
+  width: 100%;
+}
+
+.program span{
+  display: block;
+}
+
+.program-text{
+  margin: 16px;
+  color: #373737;
+}
+
+.program:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+
+.programs-mob{
+  display: none;
+}
+
+#start{
+  text-align: center;
+  padding: 32px;
+  margin: 0px;
+  font-family: 'Biryani';
+  font-weight: 800;
+  font-size: 2rem;
+}
+/*PROGRAMS SECTION MOBILE*/
+@media only screen and (max-width: 480px){
+.programs{
+  display: none;
+}
+.programs-mob{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #C0B283;
+
+}
+.program-text-mob:hover{
+  background-color: #DCD0C0;
+  color: #373737;
+}
+.program-text-mob{
+  margin-bottom: 8px;
+  background-color: #F4F4f4;
+}
+
+}
+/*Thesis Exhibit*/
+
+
+.thesis-exhibit h1{
+  text-align: center;
+  /*margin: 32px 0;*/
+  color: #373737;
+  font-size: 2rem;
+  font-family: 'Biryani';
+}
+
+/*THESIS BEGINS*/
+
+.thesis-info{
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+.thesis-main-info{
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 16px;
+  width: 70%;
+}
+
+.thesis-video video{
+  width: 100%;
+  /*border: 3px solid green;*/
+}
+
+.thesis-video{
+  margin-bottom: 24px;
+}
+.thesis-video-text{
+  color: #373737;
+}
+
+.thesis-video-text h2{
+  font-size: 1.75rem;
+  /*border: 1px solid red;*/
+  margin: 0;
+}
+
+.thesis-sub{
+  display: flex;
+}
+
+.thesis-sub:nth-child(2n+0){
+  background-color: #DCD0C0;
+}
+
+.thesis-sub-img{
+  margin: 16px;
+}
+.thesis-sub-img img{
+  width: 10rem;
+}
+
+.thesis-sub-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: #373737;
+  margin: 2rem;
+}
+
+.thesis-sub-txt h3{
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.thesis-exhibit-mob{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .thesis-exhibit{
+    display: none;
+  }
+  .thesis-exhibit-mob{
+    display: flex;
+    flex-direction: column;
+  }
+  .thesis-exhibit-mob h1{
+    text-align: center;
+  }
+  .thesis-video-mob video{
+    width: 100%;
+  }
+
+}
+/*BEGIN FOOTER*/
+
+footer{
+  background-color: #C0B283;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  /*border: 3px solid green;*/
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+
+.footer-left{
+  margin-left: 1.5rem;
+  color: #373737;
+}
+
+.footer-right{
+  text-align: right;
+  margin-right: 2rem;
+  color: #373737;
+}
+
+.footer-right span{
+  margin-left: .5rem;
+}
